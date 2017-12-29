@@ -1,4 +1,4 @@
-package com.collections.comparableandcomparator;
+package com.collections.comparableandcomparator.Map;
 
 import java.util.Collections;
 import java.util.HashMap;

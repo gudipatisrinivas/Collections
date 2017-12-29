@@ -5,4 +5,4 @@
  * @author mounikasrinivas
  *
  */
-package com.collections.comparableandcomparator;
+package com.collections.comparableandcomparator.List;

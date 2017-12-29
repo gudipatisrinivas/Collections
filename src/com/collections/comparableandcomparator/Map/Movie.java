@@ -1,4 +1,4 @@
-package com.collections.comparableandcomparator.List;
+package com.collections.comparableandcomparator.Map;
 //package com.colletions
 
 //A class 'Movie' that implements Comparable
