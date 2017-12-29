@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class UserSettingMain {
+public class ExternalizationMain {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		// TODO Auto-generated method stub
 
-		UserSettings test = new UserSettings(1,"2",true);
+		User test = new User(1,"2",true);
 
 		FileOutputStream fos = new FileOutputStream("/Users/mounikasrinivas/Downloads/external.ser");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);

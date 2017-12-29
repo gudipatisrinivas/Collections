@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
-class UserSettings implements Externalizable {
+class User implements Externalizable {
 
 	// This is required
-	public UserSettings() {
+	public User() {
 
 	}
 
@@ -42,11 +42,11 @@ class UserSettings implements Externalizable {
 		this.fieldTwo = fieldTwo;
 	}
 
-	public boolean isFieldThree() {
+	public Boolean isFieldThree() {
 		return fieldThree;
 	}
 
-	public void setFieldThree(boolean fieldThree) {
+	public void setFieldThree(Boolean fieldThree) {
 		this.fieldThree = fieldThree;
 	}
 
@@ -64,7 +64,7 @@ class UserSettings implements Externalizable {
 		out.writeBoolean(fieldThree);
 	}
 
-	public UserSettings( Integer fieldOne, String fieldTwo, boolean fieldThree) {
+	public User( Integer fieldOne, String fieldTwo, Boolean fieldThree) {
 		super();
 		//this.doNotStoreMe = doNotStoreMe;
 		this.fieldOne = fieldOne;
