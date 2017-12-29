@@ -27,15 +27,15 @@ public class SerializationUtil {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String fileName = "/Users/mounikasrinivas/Downloads/serialize.ser";
+		String fileName = "/Users/mounikasrinivas/Downloads/serialize2.ser";
 		Student stud = new Student("Srinivas", 45, 4);
 		SerializationUtil util = new SerializationUtil();
-		/*try {
+		try {
 			util.serialize(fileName, stud);
 		} catch (ClassNotFoundException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
 		try {
 			System.out.println("Object"+util.deserialize(fileName));
 		} catch (ClassNotFoundException | IOException e) {
