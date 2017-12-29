@@ -24,11 +24,8 @@ public class MovieNameComparator {
 		});
 
 		System.out.println("Movies after sorting : ");
-		for (Movie movie: list)
-		{
-			System.out.println(movie.getName() + " " +
-							movie.getRating() + " " +
-							movie.getYear());
+		for (Movie movie : list) {
+			System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear());
 		}
 	}
 
