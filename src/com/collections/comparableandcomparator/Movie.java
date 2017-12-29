@@ -2,28 +2,38 @@ package com.collections.comparableandcomparator;
 //package com.colletions
 
 //A class 'Movie' that implements Comparable
-class MovieComparable implements Comparable<MovieComparable>
-{
+class Movie implements Comparable<Movie> {
 	private double rating;
 	private String name;
 	private int year;
 
 	// Used to sort movies by year
-	public int compareTo(MovieComparable m)
-	{
-		return this.year - m.year;
+	public int compareTo(Movie m) {
+		return this.getName().compareTo(m.getName());
 	}
 
 	// Constructor
-	public MovieComparable(String nm, double rt, int yr)
-	{
+	public Movie(String nm, double rt, int yr) {
 		this.name = nm;
 		this.rating = rt;
 		this.year = yr;
 	}
 
 	// Getter methods for accessing private data
-	public double getRating() { return rating; }
-	public String getName() { return name; }
-	public int getYear()	 { return year; }
+	public double getRating() {
+		return rating;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	@Override
+	public String toString() {
+		return "Movie [rating=" + rating + ", name=" + name + ", year=" + year + "]";
+	}
 }
